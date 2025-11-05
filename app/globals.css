@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #c9a227;
+}
+
+html, body {
+  @apply bg-ivory text-clay-800 font-body; 
+}
+
+.container-width {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.gold-accent {
+  background: linear-gradient(90deg, #b9931b, #e6c44a, #b9931b);
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.card {
+  @apply bg-white/80 backdrop-blur border border-clay-100 rounded-xl shadow-warm;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-full px-5 py-3 font-medium transition-all;
+}
+
+.btn-primary {
+  @apply bg-clay-600 text-ivory hover:bg-clay-700 shadow-warm;
+}
+
+.btn-ghost {
+  @apply border border-clay-200 text-clay-700 bg-white/60 hover:bg-white;
+}
+
+.badge-gold {
+  @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold;
+  background: #fff7da;
+  border: 1px solid #f2e3a0;
+  color: #6a4c00;
+}
+
+.mandala-divider {
+  height: 12px;
+  background-image: url('/textures/mandala-border.svg');
+  background-size: auto 12px;
+  background-repeat: repeat-x;
+}
